@@ -27,6 +27,7 @@
 
 % set type area
 \RequirePackage[paper=a4paper,
+                head=30.50029pt,
                 left=2.5cm,
                 right=4cm,
                 top=4cm,
@@ -37,7 +38,7 @@
                 footskip=1cm]{geometry}
 
 % headings witout numbers
-\RequirePackage{scrpage2}
+\RequirePackage{scrlayer-scrpage}
 \KOMAoption{headings}{normal}
 \setcounter{secnumdepth}{0}
 
@@ -108,8 +109,8 @@
 }
 
 % layout of head and foot
-\setheadtopline{1pt}
-\setheadsepline{0.2pt}
+\KOMAoption{headtopline}{1pt}
+\KOMAoption{headsepline}{0.2pt}
 \setfootwidth{textwithmarginpar}
 \setkomafont{pageheadfoot}{\small\sffamily}
 \setkomafont{pagefoot}{\large\sffamily}
